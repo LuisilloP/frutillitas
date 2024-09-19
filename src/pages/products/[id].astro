@@ -1,0 +1,154 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { Product } from "../../types/Product.ts";
+import products from "../../data/products.json";
+import Layout from "../../layouts/Layout.astro";
+import arrowsvg from "/arrow.svg";
+const { id } = Astro.params;
+
+const product: Product | undefined = products.find((p) => p.id === id);
+
+if (!product) {
+  throw new Error(`Producto no encontrado: ${id}`);
+}
+
+export const getStaticPaths = (() => {
+  return products.map((product) => ({
+    params: { id: product.id.toString() }, // Asegúrate de que el ID esté en formato de cadena
+  }));
+}) satisfies GetStaticPaths;
+
+const { description, price, extra, images, nameProduct } = product;
+console.log("Product Data:", product);
+
+// src={`/productImages/${id}/${img}`}
+---
+
+<Layout title="Frutillita creaciones">
+  <div class="pt-5 px-5">
+    <div class="relative overflow-hidden lg:w-[30rem]">
+      <div
+        id="slider"
+        class="flex transition-transform duration-300 ease-in-out
+      ."
+      >
+        {
+          images.map((img, index) => (
+            <img
+              src={`/productImages/${id}/${img}`}
+              alt={`image-${nameProduct}-${index}`}
+              class="w-full h-auto rounded object-cover lg:w-[30rem]"
+            />
+          ))
+        }
+      </div>
+
+      <!-- Navigation buttons -->
+      <svg
+        width="60px"
+        height="60px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        id="prev"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 rotate-180"
+      >
+        <path
+          opacity="0.5"
+          d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
+          fill="#1C274C"></path>
+        <path
+          d="M14 6L20 12L14 18"
+          stroke="#1C274C"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+
+      <svg
+        width="60px"
+        height="60px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        id="next"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-[4rem]"
+      >
+        <path
+          opacity="0.5"
+          d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
+          fill="#1C274C"></path>
+        <path
+          d="M14 6L20 12L14 18"
+          stroke="#1C274C"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <h1 class="text-2xl font-nerko mb-5 pt-3">{product.nameProduct}</h1>
+    <p class="text-lg font-nerko text-[#505050] mt-5">{description}</p>
+    {extra && extra.trim().length > 0 && <p class="text-md mt-2">{extra}</p>}
+    <p class="text-lg font-nerko text-[#F05252] mt-3">
+      ${price.toLocaleString("es-ES")}
+    </p>
+  </div>
+
+  <>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slider = document.getElementById("slider")!;
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+
+        if (slider && prevButton && nextButton) {
+          let index = 0;
+          const totalImages = slider.children.length;
+
+          // Update the slider position
+          function updateSlider() {
+            const offset = -index * 100;
+            slider.style.transform = `translateX(${offset}%)`;
+          }
+
+          // Click events for prev/next buttons
+          prevButton.addEventListener("click", () => {
+            index = index > 0 ? index - 1 : totalImages - 1;
+            updateSlider();
+          });
+
+          nextButton.addEventListener("click", () => {
+            index = index < totalImages - 1 ? index + 1 : 0;
+            updateSlider();
+          });
+
+          // Swipe gesture support for mobile
+          let touchStartX = 0;
+          let touchEndX = 0;
+
+          slider.addEventListener("touchstart", (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          });
+
+          slider.addEventListener("touchend", (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipeGesture();
+          });
+
+          function handleSwipeGesture() {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold) {
+              index = index < totalImages - 1 ? index + 1 : 0;
+              updateSlider();
+            }
+
+            if (touchEndX > touchStartX + swipeThreshold) {
+              index = index > 0 ? index - 1 : totalImages - 1;
+              updateSlider();
+            }
+          }
+        }
+      });
+    </script>
+  </></Layout
+>

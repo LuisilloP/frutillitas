@@ -1,0 +1,28 @@
+---
+import type { Product } from "../types/Product.ts";
+interface Props extends Product {}
+
+const { nameProduct, description, price, extra, images, id } = Astro.props;
+
+// Accede a la variable de entorno
+const url_image = import.meta.env.PUBLIC_URL_IMAGE as string;
+console.log(url_image); // Verifica si la variable se carga bien
+---
+
+<a href={`/products/${id}`}>
+	<div class="flex gap-5">
+		<img
+			class="h-[6.2rem] min-w-[6.2rem] rounded"
+			alt={`image-${nameProduct}`}
+			src={`${url_image}/${id}/${images[0]}`}
+		/>
+		<div>
+			<h3 class="text-xl font-nerko">{nameProduct}</h3>
+			<p class="text-xs font-nerko text-[#505050]">{description}</p>
+			{extra && extra.trim().length > 0 && <p>{extra}</p>}
+			<p class="text-xs font-nerko text-[#F05252]">
+				${price.toLocaleString("es-ES")}
+			</p>
+		</div>
+	</div>
+</a>
