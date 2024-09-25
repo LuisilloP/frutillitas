@@ -26,10 +26,12 @@ console.log("Product Data:", product);
 
 <Layout title="Frutillita creaciones">
   <div class="pt-5 px-5">
-    <div class="relative overflow-hidden lg:w-[30rem]">
+    <div
+      class="relative overflow-hidden lg:w-[30rem] max-h-[27rem] min-h-[27rem]"
+    >
       <div
         id="slider"
-        class="flex transition-transform duration-300 ease-in-out
+        class="flex transition-transform duration-300 ease-in-out max-h-[27rem] min-h-[27rem]
       ."
       >
         {
@@ -86,7 +88,9 @@ console.log("Product Data:", product);
           stroke-linejoin="round"></path>
       </svg>
     </div>
-    <h1 class="text-2xl font-nerko mb-5 pt-3">{product.nameProduct}</h1>
+    <h1 class="text-2xl font-nerko mb-5 pt-3 text-[#282829]">
+      {product.nameProduct}
+    </h1>
     <p class="text-lg font-nerko text-[#505050] mt-5">{description}</p>
     {extra && extra.trim().length > 0 && <p class="text-md mt-2">{extra}</p>}
     <p class="text-lg font-nerko text-[#F05252] mt-3">
