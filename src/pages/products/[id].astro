@@ -6,7 +6,9 @@ import Layout from "../../layouts/Layout.astro";
 
 const { id } = Astro.params;
 
-const product: Product | undefined = products.find((p) => p.id === id);
+const product: Product | undefined = products.find((p) => p.id === id) as
+  | Product
+  | undefined;
 
 if (!product) {
   throw new Error(`Producto no encontrado: ${id}`);
@@ -96,6 +98,15 @@ console.log("Product Data:", product);
     <p class="text-lg font-nerko text-[#F05252] mt-3">
       ${price.toLocaleString("es-ES")}
     </p>
+
+    <a
+      class="flex w-[100%] md:w-[30rem] bg-green-600 rounded font-nerko text-white justify-center items-center mt-5"
+      href={`https://wa.me/998973623?text=Hola, me interesa el producto ${product.nameProduct.replace(/[^\p{L}\p{N}\s]/gu, "")}. ¿Podrías darme más información?`}
+      target="_blank"
+    >
+      <img class="w-10 h-10" src="/whatsapp.png" />
+      Quiero más detalles, vamos a WhatsApp
+    </a>
   </div>
 
   <>
