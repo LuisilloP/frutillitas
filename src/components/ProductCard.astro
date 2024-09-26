@@ -4,9 +4,7 @@ interface Props extends Product {}
 
 const { nameProduct, description, price, extra, images, id } = Astro.props;
 
-// Accede a la variable de entorno
 const url_image = import.meta.env.PUBLIC_URL_IMAGE as string;
-console.log(url_image); // Verifica si la variable se carga bien
 ---
 
 <a href={`/products/${id}`}>

@@ -3,7 +3,23 @@ import Layout from "../layouts/Layout.astro";
 import ProductCard from "../components/ProductCard.astro";
 import type { Product } from "../types/Product";
 import productData from "../data/products.json";
-const productExample: Product[] = productData;
+const productExample: Product[] = productData as Product[];
+
+const typeOrder = 
+{
+	'ramo':1,
+	'otro':2,
+	'box':3
+}
+const sortProducts = productExample.sort((a,b)=>
+{
+	const typeA = typeOrder[a.type]|| Infinity; 
+    const typeB = typeOrder[b.type] || Infinity;
+
+    return typeA - typeB;
+})
+
+
 ---
 
 <Layout title="Frutillita creaciones">
@@ -16,7 +32,7 @@ const productExample: Product[] = productData;
 			id="container-catalog"
 		>
 			{
-				productExample.map((product) => (
+				sortProducts.map((product) => (
 					<ProductCard
 						id={product.id}
 						nameProduct={product.nameProduct}
@@ -24,6 +40,7 @@ const productExample: Product[] = productData;
 						extra={product.extra}
 						price={product.price}
 						images={product.images}
+						type={product.type}
 					/>
 					<hr class="h-[.5px] my-4 bg-gray-400 border-0 md:hidden" />
 				))

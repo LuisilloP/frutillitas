@@ -2,129 +2,140 @@
     {
         "id": "25",
         "nameProduct": "Box simple 🍓✨",
-        "description": "10 frutillas 🍓decoradas ✨ con frase en vinilo simple!",
+        "description": "10 frutillas 🍓decoradas ✨ con frase en vinilo simple!.",
         "extra": "",
         "price": 15000,
         "images": [
             "IMG-20240913-WA0056.webp",
             "IMG-20240913-WA0057.webp",
             "IMG-20240913-WA0058.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "1",
         "nameProduct": "Ramito 💐 flor🌷",
-        "description": "15 frutillas 🍓+ rosa o girasol 🌹🌻 $3.000 x cada flor extra",
+        "description": "15 frutillas 🍓+ rosa o girasol 🌹🌻 $3.000 x cada flor extra.",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA0039.webp",
             "IMG-20240913-WA0040.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "2",
         "nameProduct": "Ramos 💐con rosas🌹🌹🌹",
-        "description": "Ramo 5 rosas 🌹+ 20 frutillas + Liston personalizado 🎀 El valor aumenta por cada rosa extra $3.000 c/u",
+        "description": "Ramo 5 rosas 🌹+ 20 frutillas + Liston personalizado 🎀 El valor aumenta por cada rosa extra $3.000 c/u.",
         "extra": "",
         "price": 35000,
         "images": [
             "IMG-20240913-WA0046.webp",
             "IMG-20240913-WA0047.webp",
             "IMG-20240913-WA0048.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "3",
         "nameProduct": "Ramito 💐Simple Frutillas 🍓",
-        "description": "Ramito 15 frutillas x $20.000 20 frutillas x 23.000 30 frutillas x 28.000",
+        "description": "Ramito 15 frutillas x $20.000 20 frutillas x 23.000 30 frutillas x 28.000.",
         "extra": "",
         "price": 20000,
         "images": [
             "IMG-20240913-WA0077.webp",
             "IMG-20240913-WA0078.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "4",
         "nameProduct": "Tazita ☕personalizada✏️",
-        "description": "Tazita personalizada ✏️+ 12 Frutillas 🍓",
+        "description": "Tazita personalizada ✏️+ 12 Frutillas 🍓.",
         "extra": "",
         "price": 15000,
         "images": [
             "IMG-20240913-WA0112.webp"
-        ]
+        ],
+        "type": "otro"
     },
     {
         "id": "5",
         "nameProduct": "Ramito Ilusión 🩷",
-        "description": "Ramito con 12 frutillas + ilusiones",
+        "description": "Ramito con 12 frutillas + ilusiones.",
         "extra": "",
         "price": 22000,
         "images": [
             "IMG-20240913-WA0043.webp",
             "IMG-20240913-WA0044.webp",
             "IMG-20240913-WA0065.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "6",
         "nameProduct": "Box Infantil 🎈donitas 🍩",
-        "description": "Caja con donitas 25 + chocolates calaf + mashmallow (personalizado con dibujos a elección)",
+        "description": "Caja con donitas 25 + chocolates calaf + mashmallow (personalizado con dibujos a elección).",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA4321.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "7",
         "nameProduct": "Box 1 🎁 personalizada",
-        "description": "10 frutillas 🍓 bañadas en chocolate decoradas + mashmallow🍬 con frase personalizada",
+        "description": "10 frutillas 🍓 bañadas en chocolate decoradas + mashmallow🍬 con frase personalizada.",
         "extra": "",
         "price": 20000,
         "images": [
             "IMG-20240913-WA0085.webp",
             "IMG-20240913-WA0095.webp",
             "IMG-20240913-WA0096.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "8",
         "nameProduct": "Box 🎁simple frutillas🍓",
-        "description": "Cajita con 10 frutillas",
+        "description": "Cajita con 10 frutillas.",
         "extra": "",
         "price": 15000,
         "images": [
             "IMG-20240913-WA9876.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "9",
         "nameProduct": "Box 🎁 I Love You 🫶🏼",
-        "description": "Rellena con frutillas 🍓, bombones🍫 y mini mashmallow🍬 Caja de 30x60 cm Globo personalizado🎈✏️ CLP 5,000 Globo con frase personalizada",
+        "description": "Rellena con frutillas 🍓, bombones🍫 y mini mashmallow🍬 Caja de 30x60 cm Globo personalizado🎈✏️ CLP 5,000 Globo con frase personalizada.",
         "extra": "",
         "price": 40000,
         "images": [
             "IMG-20240913-WA0064.webp",
             "IMG-20240913-WA0093.webp",
             "IMG-20240913-WA0094.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "10",
         "nameProduct": "Box 4🎁 Corazón 🩷 bombones y flores 🌹🌻",
-        "description": "Frutillas + bombones 🍫 + 5 rosas 🌹",
+        "description": "Frutillas + bombones 🍫 + 5 rosas 🌹.",
         "extra": "",
         "price": 38000,
         "images": [
             "IMG-20240913-WA5678.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "11",
         "nameProduct": "Box 3🎁 Ferrero Rocher🍫🍫🍫",
-        "description": "Corazón con 15 frutillas decoradas 🍓 + Bombones 🍫 Ferrero Rocher",
+        "description": "Corazón con 15 frutillas decoradas 🍓 + Bombones 🍫 Ferrero Rocher.",
         "extra": "",
         "price": 30000,
         "images": [
@@ -132,142 +143,168 @@
             "IMG-20240913-WA0083.webp",
             "IMG-20240913-WA0090.webp",
             "IMG-20240913-WA9231.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "12",
         "nameProduct": "Box 2 🎁Frutillas🍓 y bombones🍫",
-        "description": "Cajita 14 frutillas 🍓+ 3 bombones🍫",
+        "description": "Cajita 14 frutillas 🍓+ 3 bombones🍫.",
         "extra": "",
         "price": 22000,
         "images": [
             "IMG-20240913-WA0002.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "13",
         "nameProduct": "Box 3 🎁 personalizadas✏️",
-        "description": "Cajitas personalizadas con 15 frutillas 🍓+ bombones Ferrero Rocher🍫 con frases personalizadas",
+        "description": "Cajitas personalizadas con 15 frutillas 🍓+ bombones Ferrero Rocher🍫 con frases personalizadas.",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA0113.webp",
             "IMG-20240913-WA1122.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "14",
         "nameProduct": "Box 2🎁 Corazón 🩷",
-        "description": "Corazón con 8 frutillas 🍓+ 12 bombones🍫",
+        "description": "Corazón con 8 frutillas 🍓+ 12 bombones🍫.",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA1411.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "15",
         "nameProduct": "Box 1 🎁Corazón🩷",
-        "description": "Cajita con 20 frutillas 🍓 + topper frase personalizada",
+        "description": "Cajita con 20 frutillas 🍓 + topper frase personalizada.",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA1511.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "16",
         "nameProduct": "Ramito 💐Listón 🎀",
-        "description": "Ramito 15 frutillas 🍓+ listón con frase 🎀 personalizada",
+        "description": "Ramito 15 frutillas 🍓+ listón con frase 🎀 personalizada.",
         "extra": "",
         "price": 22000,
         "images": [
             "IMG-20240913-WA1611.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "17",
         "nameProduct": "Ramito 💐Princesa 👑",
-        "description": "Ramo de 15 frutillas 🍓+ corona👑",
+        "description": "Ramo de 15 frutillas 🍓+ corona👑.",
         "extra": "",
         "price": 22000,
         "images": [
             "IMG-20240913-WA0062.webp",
             "IMG-20240913-WA1711.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "18",
         "nameProduct": "Box 🎁Frutillas🍓 y peluche🧸",
-        "description": "Cajita de 20 frutillas 🍓 + peluche + bombones",
+        "description": "Cajita de 20 frutillas 🍓 + peluche + bombones.",
         "extra": "",
         "price": 30000,
         "images": [
             "IMG-20240913-WA0105.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "19",
         "nameProduct": "Box 🎁 Rosa y frutillas 🌹 personalizada",
-        "description": "1 rosa 🌹+ 5 frutillas decoradas + caja personalizada nombre",
+        "description": "1 rosa 🌹+ 5 frutillas decoradas + caja personalizada nombre.",
         "extra": "",
         "price": 15000,
         "images": [
             "IMG-20240913-WA1911.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "20",
         "nameProduct": "Maxi 🎁cilindro",
-        "description": "15 rosas 🌹 + 30 frutillas 🍓+ globo personalizado🎈",
+        "description": "15 rosas 🌹 + 30 frutillas 🍓+ globo personalizado🎈.",
         "extra": "",
         "price": 70000,
         "images": [
             "IMG-20240913-WA0106.webp",
             "IMG-20240913-WA0117.webp"
-        ]
+        ],
+        "type": "ramo"
     },
     {
         "id": "21",
         "nameProduct": "Vasitos frutillas 🍓",
-        "description": "Vasitos con 8 frutillas 🍓bañadas en chocolate🍫",
+        "description": "Vasitos con 8 frutillas 🍓bañadas en chocolate🍫.",
         "extra": "",
         "price": 5000,
         "images": [
             "IMG-20240913-WA0063.webp"
-        ]
+        ],
+        "type": "otro"
     },
     {
         "id": "22",
         "nameProduct": "Box 🎁 Dulcera🍬🍫💞",
-        "description": "Cajita personalizada 🎁+ globo 🎈 + dulces🍬🍫 variados y/o peluche 🧸",
+        "description": "Cajita personalizada 🎁+ globo 🎈 + dulces🍬🍫 variados y/o peluche 🧸.",
         "extra": "",
         "price": 25000,
         "images": [
             "IMG-20240913-WA2211.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "23",
         "nameProduct": "Box Cilindro💞 Globo personalizado🎈",
-        "description": "Cilindro con 18 frutillas 🍓+ globo personalizado🎈 + 3 rosas🌹",
+        "description": "Cilindro con 18 frutillas 🍓+ globo personalizado🎈 + 3 rosas🌹.",
         "extra": "",
         "price": 38000,
         "images": [
             "IMG-20240913-WA2311.webp",
             "IMG-20240913-WA2312.webp"
-        ]
+        ],
+        "type": "box"
     },
     {
         "id": "24",
         "nameProduct": "Box 🎁Globo personalizado 🎈",
-        "description": "Cajita Corazon 🩷 15 frutillas 🍓 + bombones Ferrero Rocher + globo personalizado",
+        "description": "Cajita Corazon 🩷 15 frutillas 🍓 + bombones Ferrero Rocher + globo personalizado.",
         "extra": "",
         "price": 35000,
         "images": [
             "IMG-20240913-WA0081.webp",
             "IMG-20240913-WA0088.webp",
             "IMG-20240913-WA0089.webp"
-        ]
+        ],
+        "type": "box"
+    },
+    {
+        "id": "26",
+        "nameProduct": "Globo personalizado 🎈",
+        "description": "Globo personalizado, ideal para cumpleaños y celebraciones especiales.",
+        "extra": "",
+        "price": 5000,
+        "images": [
+            "IMG-20240913-WA2601.webp",
+            "IMG-20240913-WA2602.webp"
+        ],
+        "type": "otro"
     }
 ]
